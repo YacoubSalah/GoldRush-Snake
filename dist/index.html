@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./handlebars/dist/handlebars.js"></script>
+    <script src="./jquery/dist/jquery.js"></script>
+
+    <link rel="stylesheet" href="Style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header">
+
+        <div class="playerData">
+            <input id="player1Name" value="player1" class="nameInputField" type="text" placeholder="Player 1 Name">
+        </div>
+
+        <button id="startGame" style="width:100%;">Start Game</button>
+
+        <div class="playerData">
+            <input id="player2Name" value="player2" class="nameInputField" type="text" placeholder="Player 2 Name">
+        </div>
+
+    </div>
+
+    <div id="playground">
+
+    </div>
+    <script id="playground-Template" type="text/x-handlebars-template">
+        {{#each playground}}
+            {{#each this}}
+                <img src="./Images/{{this}}.png" alt="">
+            {{/each}}
+        {{/each}}
+    </script>
+
+    <script src="./Libraries/Players.js"></script>
+    <script src="./Libraries/MatrixDatastrucure.js"></script>
+    <script src="./MVC/Model.js"></script>
+    <script src="./MVC/View.js"></script>
+    <script src="./MVC/Controller.js"></script>
+</body>
+
+</html>

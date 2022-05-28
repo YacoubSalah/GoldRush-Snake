@@ -1,0 +1,82 @@
+body {
+    display: grid;
+    grid-gap: .5vh;
+    justify-content: center;
+    background: rgb(245, 243, 243);
+}
+
+img{
+    width: 9vh;
+    height: 9vh;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 35vh 55vh 35vh;
+    grid-gap: 3vh;
+
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-top: .5vh;
+    padding-bottom: .5vh;
+
+    background-color: rgba(185, 204, 187, 0.473);
+    
+    border-style: outset;
+    border-width: .5vh;
+    border-radius: 1vh;
+    
+    height: 4.7vh;
+    width: 129vh;
+}
+
+.playerData{
+    
+    display: grid;
+    justify-content: center;
+    
+}
+
+.nameInputField{
+    width: 100%;
+    border-style: inset;
+    border-radius: 1vh;
+    text-align: center;
+}
+
+#startGame{
+    border-color: #4d4d4d;
+    border-width: .3vh;
+    border-radius: 1vh;
+    box-shadow: 0.2vh 0.2vh 0.4vh #8b8a8a;
+    font-size: 2vh;
+}
+
+#startGame:active {
+    box-shadow: unset;
+}
+
+
+#playground{
+    display: grid;
+    grid-gap: 0;
+    grid-template-rows: 9vh 9vh 9vh 9vh 9vh 9vh 9vh 9vh 9vh 9vh ;
+    grid-template-columns: 9vh 9vh 9vh 9vh 9vh 9vh 9vh 9vh 9vh 9vh 9vh 9vh 9vh 9vh 9vh ;
+    background-color: rgb(147, 152, 152);
+    background-image: url("./Images/Background.jpg");
+    background-size: 135vh 90vh;
+    
+    border-style:inset;
+    border-color: rgba(73, 153, 223, 0.747);
+    border-width: .5vh;
+    
+    height: 90vh;
+    width: 135vh;
+}
+
+.block{
+    width: 9vh;
+    height: 9vh;
+    display: inline-block;
+    margin: 0;
+}
